@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false, // Remove if comfortable with TypeScript
+    "outDir": "dist/server",
+    "declaration": true
+  },
+  "include": ["src/**/*", "test/**/*", "vite.config.ts"]
+}

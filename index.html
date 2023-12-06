@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0" />
+    <title>FeathersJS chat</title>
+    <script type="module" src="./client.ts"></script>
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="//cdn.rawgit.com/feathersjs/feathers-chat/v4.0.0/public/base.css"
+    />
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="//cdn.rawgit.com/feathersjs/feathers-chat/v4.0.0/public/chat.css"
+    />
+    <style>
+      :root {
+        --accent-color: #be1193;
+      }
+      header {
+        font-size: 2rem;
+      }
+      header.title-bar img.logo {
+        vertical-align: middle;
+        width: auto;
+        height: 2rem;
+      }
+      aside.sidebar .online-count,
+      a {
+        color: var(--accent-color);
+      }
+
+      .button-primary:hover,
+      .button-primary:focus,
+      .button-primary {
+        background-color: var(--accent-color);
+      }
+      .button-primary:hover,
+      .button-primary:focus {
+        filter: brightness(0.8);
+      }
+      .message {
+        position: relative;
+        max-width: 600px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        padding: 5px;
+      }
+      .message:after {
+        content: '❤️';
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        font-size: 30px;
+        opacity: 0;
+        transform: scale(0.7);
+        transition: transform ease 500ms, opacity ease 500ms;
+        will-change: transform;
+      }
+      .message.isLiked:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="flex flex-column">
+      <h1>Connecting...</h1>
+    </div>
+  </body>
+</html>
